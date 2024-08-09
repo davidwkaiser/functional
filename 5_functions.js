@@ -51,7 +51,7 @@ let myArray = [
 console.log("beginning!", myArray)
 
 //Convert to integer
-myArray = englishToInteger(myArray)
+englishToInteger(myArray)
 console.log("integers!", myArray)
 
 //Filter to 1 - 4
@@ -59,14 +59,14 @@ myArray = filterArray(myArray)
 console.log("filtered!", myArray)
 
 //Convert to Spanish
-myArray = convertToSpanish(myArray)
+convertToSpanish(myArray)
 console.log("Spanish!", myArray)
 
 //Capitalize
-myArray = capitalize(myArray)
+capitalize(myArray)
 console.log("capitalized & complete!", myArray)
 
-//METHODS
+//FUNCTIONS
 function englishToInteger(array){
   for (let i= 0; i < array.length; i++ ){
     switch(array[i]) {
@@ -101,7 +101,6 @@ function englishToInteger(array){
             array[i] = 10;
     }
   }
-    return array;
 }
 
 function filterArray(array){
@@ -109,7 +108,7 @@ function filterArray(array){
   for (let i= 0; i < array.length; i++){
       if (array[i] < 5) tempArray.push(array[i])
   }
-  return tempArray
+    return tempArray
 }
 
 function convertToSpanish(array) {
@@ -131,14 +130,12 @@ function convertToSpanish(array) {
             array[i] = "??"
     }
   }
-  return array
 }
 
 function capitalize(array){
   for (let i= 0; i < array.length; i++ ){
     array[i] = capitalizeWord(array[i])
   }
-  return array
 }
 
 function capitalizeWord(word){

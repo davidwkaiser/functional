@@ -7,8 +7,8 @@ const getNextDay = (millis)=> {
   return weekday[nextDay.getDay()]
 }
 
-let today = Date.now()
+let today = new Date("2024-8-15")
 console.log("Tomorrow is", getNextDay(today))
 
-let laborDay = new Date("2024-9-2")
-console.log("The day after Labor Day is", getNextDay(laborDay))
+// let laborDay = new Date("2024-9-2")
+// console.log("The day after Labor Day is", getNextDay(laborDay))

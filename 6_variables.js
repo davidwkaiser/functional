@@ -66,7 +66,7 @@ console.log("Spanish!", spanishArray)
 const capitalizedSpanishArray = capitalize(spanishArray)
 console.log("capitalized & complete!", capitalizedSpanishArray)
 
-//METHODS
+//FUNCTIONS
 function englishToInteger(array){
   let outputArray = []
   for (let i= 0; i < array.length; i++ ){

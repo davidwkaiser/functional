@@ -50,16 +50,16 @@ let myArray = [
 ]
 console.log("beginning!", myArray)
 
-let capitalizedSpanishArray = myArray
+const capitalizedSpanishArray = myArray
     .map(englishToInteger)
-    .filter(filterLessThanFive)
+    .filter(keepLessThanFive)
     .map(convertToSpanish)
     .map(capitalizeWord)
 
 //Completed
 console.log("capitalized & completed!", capitalizedSpanishArray)
 
-//METHODS
+//FUNCTIONS
 function englishToInteger(word){
     switch(word) {
         case "one":
@@ -94,7 +94,7 @@ function englishToInteger(word){
     }
 }
 
-function filterLessThanFive(number){
+function keepLessThanFive(number){
   return number < 5
 }
 

@@ -2,19 +2,16 @@ const printNumber = (number) => {
   console.log("Your number is", number)
 }
 
-const noteNull = (input) =>{
-  console.log("Input was null")
+const printString = (input) =>{
+  console.log("Input was", input)
 }
 
 const controller = (input) => {
-  const functionToCall = input ? printNumber : noteNull
+  const functionToCall = typeof(input) === Number ? printNumber : printString
   functionToCall(input)
 }
 
-console.log("***")
 controller(2)
 
-console.log("***")
-controller(null)
+// controller("Hello world!")
 
-console.log("***")
